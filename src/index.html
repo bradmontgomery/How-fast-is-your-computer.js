@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>How Fast is your Computer?</title>
+  <style type="text/css">
+    body {font-family: Helvetica; font-size: 18px;}
+    div#content { width: 500px; margin:1em auto; }
+    table { border: 1px solid #ccc; width: 100%;}
+    table th {text-align: left; }
+    table th, table td { padding:1em; margin:.25em;}
+    .center { text-align: center;}
+  </style>
+</head>
+<body>
+  <div id="content">
+  <h1>How Fast is your computer?</h1>
+
+  <table>
+  <tbody>
+  <tr>
+    <th>Number of Calculations</th>
+    <td><input id="numCalculations" value="1000000"/></td>
+  </tr>
+  <tr>
+    <th>Data Type</th>
+    <td>
+      <select id="dataType">
+        <option value="integer">Integer</option>
+        <option value="float">Floating Point (Decimal)</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th>Operation</th>
+    <td>
+      <select id="operation">
+        <option value="addition">Addition</option>
+        <option value="subtraction">Subtraction</option>
+        <option value="multiplication">Multiplication</option>
+        <option value="division">Division</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th>Number of Iterations</th>
+    <td>
+      <select id="iterations">
+        <option value="1000">1 thousand</option>
+        <option value="10000">10 thousand</option>
+        <option value="100000">100 thousand</option>
+        <option value="1,000,000">1 million</option>
+      </select>
+      <br/>
+      <small>To get an average for the ammount of time it takes to perform the
+      calculations, we'll run the test a number of times.</small>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="center">
+      <button id="run">Run Experiment</button>
+      <br/><span id="message"></span>
+     </td>
+  </tr>
+  <tr>
+    <th>Results:</th>
+    <td>
+      On average, this takes:
+      <span id="time">0</span> milliseconds.
+    </td>
+  </tr>
+  </tbody>
+  </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
