@@ -9,3 +9,9 @@ I built this because I wanted to run the experiment on an iPhone and an iPad.
 It uses a web worker to run the calculations. That way your browser shouldn't annoy you about the script taking too long to run.
 
 This code is available under an MIT license.
+
+
+See it in action
+----------------
+
+Just head over to [http://bradmontgomery.github.io/how-fast-is-your-computer/](http://bradmontgomery.github.io/how-fast-is-your-computer/src/index.html)
