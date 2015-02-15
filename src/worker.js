@@ -40,6 +40,7 @@ var calculate = function(config, results) {
             start = new Date();
             for(x=0; x < config.numCalculations; x++) {
                 // Note, operands are sorted smallest-largest.
+                operands = getOperands(config.dataType);
                 _ = operands[1] - operands[0];
             }
             end = new Date();
@@ -48,6 +49,7 @@ var calculate = function(config, results) {
         case "multiplication":
             start = new Date();
             for(x=0; x < config.numCalculations; x++) {
+                operands = getOperands(config.dataType);
                 _ = operands[0] * operands[1];
             }
             end = new Date();
@@ -56,6 +58,7 @@ var calculate = function(config, results) {
         case "division":
             start = new Date();
             for(x=0; x < config.numCalculations; x++) {
+                operands = getOperands(config.dataType);
                 _ = operands[0] / operands[1];
             }
             end = new Date();
