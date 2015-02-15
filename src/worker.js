@@ -73,8 +73,6 @@ var run = function(config) {
         calculate(config, results);
     }
     mean_results = mean(results);
-    console.log("Ran " + config.iterations + "iterations.");
-    console.log("Completed in a mean time of: " + mean_results);
     return mean_results;
 };
 
